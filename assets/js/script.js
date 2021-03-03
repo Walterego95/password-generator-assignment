@@ -30,7 +30,7 @@ function checkType() {
   if(approvedTypes.length > 0) {
     return approvedTypes;
   } else {
-    window.alert("It must contain at least one character type. You may choose between 'lowercase', uppercase, numeric, special".)
+    window.alert("It must contain at least one character type. You may choose between 'lowercase', 'uppercase', 'numeric', 'special'".)
     return checkType();
   }
 }
