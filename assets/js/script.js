@@ -1,10 +1,10 @@
 // Assignment code here
 function generatePassword() {
     // ask how many characters would like to use
-  var passwordLength = window.prompt("How many characters would you like your password to be?");
+  var passwordLength = window.prompt("How many characters would you like your password to be? [type a number between 8 and 128");
   if(passwordLength < 8 || passwordLength > 128) {
     //check if it is a valid prompt
-    window.alert("The value inserted is not valid, you must choose between 8 and 128 lenght.);
+    window.alert("The value inserted is not valid, try again!");
     return generatePassword();
   } else { 
     //if valid
@@ -14,7 +14,7 @@ function generatePassword() {
 } 
 // ask what kind of characters would like to use
 function checkType() {
-  var passwordCharacter = window.prompt("What character types would you like to use?");
+  var passwordCharacter = window.prompt("What character types would you like to use? you may type one or more of the following strings: [lowercase] [uppercase] [numeric] [special]");
   //valid types accepted
   var validTypes = ["lowercase", "uppercase", "numeric", "special"];
   var chosenTypes = passwordCharacter.replace(/ /gi, "").split(",");
