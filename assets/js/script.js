@@ -4,7 +4,7 @@ function generatePassword() {
   var passwordLength = window.prompt("How many characters would you like your password to be?");
   if(passwordLength < 8 || passwordLength > 128) {
     //check if it is a valid prompt
-    window.alert("The value inserted is not valid, try again!");
+    window.alert("The value inserted is not valid, you must choose between 8 and 128 lenght.);
     return generatePassword();
   } else { 
     //if valid
@@ -30,7 +30,7 @@ function checkType() {
   if(approvedTypes.length > 0) {
     return approvedTypes;
   } else {
-    window.alert("It must contain at least one character type")
+    window.alert("It must contain at least one character type. You may choose between 'lowercase', uppercase, numeric, special".)
     return checkType();
   }
 }
